@@ -15,7 +15,8 @@ app.use(cors())
 //***************
 //* Controllers *
 //***************
-
+const birdsController = require('./controllers/birds.js')
+app.use("/birds", birdsController)
 
 //***************
 //*** Routes ****
